@@ -7,7 +7,7 @@ const Header = () => {
       <img src={Logo} alt="logo" />
       <nav>
         <ul>
-          <li>Home</li>
+          <li className='home'>Home</li>
           <li>Find a doctor</li>
           <li>Apps</li>
           <li>Testimonials</li>

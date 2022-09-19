@@ -17,6 +17,11 @@ header {
       flex-direction: row;
       justify-content: space-between;
       list-style: none;
+
+      .home {
+        color: black;
+        font-weight: bolder;
+      }
   
       li {
         padding: 5%;
