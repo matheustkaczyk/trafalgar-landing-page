@@ -77,4 +77,37 @@ header {
   div {
     padding: 0 10% 0 10%;
   }
+
+  .articles-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 12rem;
+      padding: 5%;
+      background-color: whitesmoke;
+      border-radius: 5px;
+      margin-top: 2%;
+      overflow: hidden;
+
+      img {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      h1 {
+        padding: 5%;
+      }
+
+      p {
+        text-align: justify;
+        color: grey;
+      }
+    }
+  }
 }
