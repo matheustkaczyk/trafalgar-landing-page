@@ -1,6 +1,7 @@
 import './App.scss'
 
 import Header from './components/Header'
+import Carousel from './components/Carousel'
 
 import Home from './pages/Home'
 import Leading from './pages/Leading'
@@ -13,6 +14,9 @@ function App() {
       <Home />
       <Services />
       <Leading />
+      <Carousel>
+        
+      </Carousel>
     </div>
   )
 }
