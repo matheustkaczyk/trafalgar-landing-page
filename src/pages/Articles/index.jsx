@@ -1,6 +1,6 @@
-import img1 from '../../assets/img1.png';
-import img2 from '../../assets/img2.png';
-import img3 from '../../assets/img3.png';
+import img1 from '../../assets/article-1.png';
+import img2 from '../../assets/article-2.png';
+import img3 from '../../assets/article-3.png';
 
 const data = [
   {
@@ -26,7 +26,18 @@ const data = [
 const Articles = () => {
   return(
     <section className="articles-section">
-
+      {
+        data.map((item, index) => (
+          <div key={index} className="article-item">
+            <img src={item.img} alt={item.alt} />
+            <div className="article-info">
+              <h4>{item.title}</h4>
+              <p>{item.text}</p>
+            </div>
+            <button>Read more {'->'}</button>
+          </div>
+        ))
+      }
     </section>
   )
 }

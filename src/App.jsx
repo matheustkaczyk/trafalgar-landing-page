@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Leading from './pages/Leading';
 import Services from './pages/Services';
 import Customers from './pages/Customers';
+import Articles from './pages/Articles';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <Leading />
       <Customers />
+      <Articles />
     </div>
   )
 }
