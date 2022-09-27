@@ -9,6 +9,7 @@ import Leading from './pages/Leading';
 import Services from './pages/Services';
 import Customers from './pages/Customers';
 import Articles from './pages/Articles';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Leading />
       <Customers />
       <Articles />
+      <Footer />
     </div>
   )
 }
