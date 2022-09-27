@@ -29,20 +29,28 @@ const Customers = () => {
   };
 
   return(
-    <section>
-      <h1>What our customers are saying</h1>
-      <hr />
-      <div>
-        <Slider {...settings}>
-          {data.map((item, index) => (
-            <div key={index}>
-              <img src={item.img} alt={item.alt} />
-              <h2>{item.name}</h2>
-              <h3>{item.subtitle}</h3>
-              <p>{item.text}</p>
-            </div>
-          ))}
-        </Slider>
+    <section className='customers-section'>
+      <div className='customer-wrapper'>
+        <div className='customer-hero'>
+          <h1>What our customers are saying</h1>
+          <hr />
+        </div>
+        <div className='slider-wrapper'>
+          <Slider {...settings}>
+            {data.map((item, index) => (
+              <div key={index} className="carousel-item">
+                <div className='item-info'>
+                  <img src={item.img} alt={item.alt} />
+                  <div>
+                    <h4>{item.name}</h4>
+                    <h5>{item.subtitle}</h5>
+                  </div>
+                </div>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </section>
   )
