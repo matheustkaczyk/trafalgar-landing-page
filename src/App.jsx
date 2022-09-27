@@ -1,31 +1,13 @@
 import './App.scss';
-import "~slick-carousel/slick/slick.css"; 
-import "~slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import Header from './components/Header';
 
 import Home from './pages/Home';
 import Leading from './pages/Leading';
 import Services from './pages/Services';
-
-import tkaczyk from './assets/tkaczyk.jpg';
-
-const data = [
-  {
-    img: tkaczyk,
-    alt: 'tkaczyk',
-    name: 'Matheus Tkaczyk Ribeiro',
-    subtitle: 'Software Developer',
-    text: 'Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely.'
-  },
-  {
-    img: tkaczyk,
-    alt: 'tkaczyk',
-    name: 'Matheus Tkaczyk Ribeiro',
-    subtitle: 'Software Developer',
-    text: 'Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely.'
-  },
-]
+import Customers from './pages/Customers';
 
 function App() {
   return (
@@ -34,6 +16,7 @@ function App() {
       <Home />
       <Services />
       <Leading />
+      <Customers />
     </div>
   )
 }
