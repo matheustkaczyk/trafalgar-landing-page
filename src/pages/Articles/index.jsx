@@ -26,18 +26,24 @@ const data = [
 const Articles = () => {
   return(
     <section className="articles-section">
-      {
-        data.map((item, index) => (
-          <div key={index} className="article-item">
-            <img src={item.img} alt={item.alt} />
-            <div className="article-info">
-              <h4>{item.title}</h4>
-              <p>{item.text}</p>
+      <div>
+        <h1>Check out our latest articles</h1>
+        <hr />
+      </div>
+      <div className="articles-wrapper">
+        {
+          data.map((item, index) => (
+            <div key={index} className="article-item">
+              <img src={item.img} alt={item.alt} />
+              <div className="article-info">
+                <h4>{item.title}</h4>
+                <p>{item.text}</p>
+              </div>
+              <button>Read more {'->'}</button>
             </div>
-            <button>Read more {'->'}</button>
-          </div>
-        ))
-      }
+          ))
+        }
+      </div>
     </section>
   )
 }
