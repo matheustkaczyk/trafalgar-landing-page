@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Logo from '../../assets/logo.svg';
+import hamburger from '../../assets/hamburger.svg';
 
 const Header = () => {
   return(
@@ -14,6 +16,7 @@ const Header = () => {
           <li>About us</li>
         </ul>
       </nav>
+      <img className='hamburger-icon' src={hamburger} alt="hamburger" />
     </header>
   )
 }
