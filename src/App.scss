@@ -371,29 +371,36 @@ footer {
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-around;
+      width: 50%;
     }
 
     nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: auto;
+
       h4 {
         color: black;
       }
-    
-      ul {
-        list-style: none;
-    
-        li {
-          cursor: pointer;
+
+      div {
+        margin-left: 10%;
+
+        ul {
+          list-style: none;
+      
+          li {
+            cursor: pointer;
+          }
         }
       }
+    
     }
   }
 }
 
 @media only screen and (max-width: 880px) and (max-height: 915px) {
-  * {
-    font-size: 1em;
-  }
-
   header {
     height: 10vh;
 
@@ -417,6 +424,7 @@ footer {
     align-items: center;
     margin-top: 3em;
     height: 90vh;
+    font-size: 1.6em;
 
     .home-wrapper {
       display: flex;
@@ -442,16 +450,6 @@ footer {
   }
 
   .services-page {
-    div {
-      h1 {
-        font-size: 1.2em;
-      }
-
-      p {
-        font-size: smaller;
-      }
-    }
-
     .articles-wrapper {
       article {
         width: 35%;
