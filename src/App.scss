@@ -2,6 +2,10 @@ body {
   background-color: white;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -29,6 +33,11 @@ header {
   
       li {
         padding: 5%;
+        cursor: pointer;
+      }
+
+      li:hover {
+        color: #4089ED;
       }
     }
   }
