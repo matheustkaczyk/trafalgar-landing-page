@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import './App.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,9 +14,15 @@ import Articles from './pages/Articles';
 import Footer from './components/Footer';
 
 function App() {
+  const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
+  const handleHamburgerMenu = () => {
+    setHamburgerMenu(!hamburgerMenu);
+  }
+
   return (
     <div className="App">
-      <Header />
+      <Header isOpen={hamburgerMenu} handleHamburger = {() => handleHamburgerMenu} />
       <Home />
       <Services />
       <Leading />
