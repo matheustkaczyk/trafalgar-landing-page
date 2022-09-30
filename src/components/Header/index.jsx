@@ -7,11 +7,8 @@ const Header = ({ isOpen, handleHamburger }) => {
   useEffect(() => {
     const hamburger = document.querySelector('.hamburger-menu');
 
-    if (isOpen) {
-      hamburger.classList.toggle('active');
-    } else {
-      hamburger.classList.toggle('active');
-    }
+    isOpen === true ? hamburger.classList.add('active') : hamburger.classList.remove('active');
+
   }, [isOpen]);
 
   return(
@@ -26,9 +23,9 @@ const Header = ({ isOpen, handleHamburger }) => {
           <li>About us</li>
         </ul>
       </nav>
-      <img className='hamburger-icon' src={hamburger} alt="hamburger" onClick={() => handleHamburger()} />
+      <img className='hamburger-icon' src={hamburger} alt="hamburger" onClick={ handleHamburger()} />
       <aside className='hamburger-menu'>
-        <h1 onClick={() => handleHamburger()}>X</h1>
+        <h1 onClick={handleHamburger()}>X</h1>
         <ul>
           <li className='home'>Home</li>
           <li>Find a doctor</li>
