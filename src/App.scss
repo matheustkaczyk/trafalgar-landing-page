@@ -132,7 +132,6 @@ header {
     background-size: 10vw;
     background-position: right center;
     background-repeat: no-repeat;
-    margin-top: 2em;
 
     article {
       display: flex;
@@ -494,6 +493,8 @@ footer {
 
   .services-page {
     .articles-wrapper {
+      margin-top: 3em;
+
       article {
         width: 35%;
         justify-content: space-around;
