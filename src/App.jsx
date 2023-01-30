@@ -22,12 +22,16 @@ function App() {
 
   return (
     <div className="App">
-      <Header isOpen={hamburgerMenu} handleHamburger = {() => handleHamburgerMenu} />
-      <Home />
-      <Services />
-      <Leading />
-      <Customers />
-      <Articles />
+      <Header isOpen={hamburgerMenu} handleHamburger={() => handleHamburgerMenu} />
+      <div className='body-wrapper'>
+        <div className='body-inner-wrapper'>
+          <Home />
+          <Services />
+          <Leading />
+          <Customers />
+          <Articles />
+        </div>
+      </div>
       <Footer />
     </div>
   )
